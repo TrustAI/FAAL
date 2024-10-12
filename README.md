@@ -71,12 +71,17 @@ For Wide-ResNet34-10:
 python run_wrn.py
 ```
 
-## Model Checkpoints 
+## Model Checkpoints for CIFAR10 
 
 [TRAINED_FAAL_AT_CIFAR10.pth](https://www.dropbox.com/scl/fi/smx0gvb1goe1upi28svl0/TRAINED_FAAL_AT_CIFAR10.pth?rlkey=151swazoypbrtviyatqdsv3ba&st=ryjfvlqk&dl=1)
 
+[TRAINED_FAAL_TRADERS_CIFAR10.pth](https://www.dropbox.com/scl/fi/h6176jjna5pw0sqouxxm7/TRAINED_FAAL_TRADERS_CIFAR10.pth?rlkey=w681sahq36gmhv8udg52bi81o&st=6mxqr1g6&dl=1)
+
 [TRAINED_FAAL_TRADERS_AWP_CIFAR10.pth](https://www.dropbox.com/scl/fi/9vnsdzsv6jw39z09vzx75/TRAINED_FAAL_TRADERS_AWP_CIFAR10.pth?rlkey=ox3fsugzv35k3i23xfmrrvlwg&st=vzknvo2p&dl=1)
 
-[TRAINED_FAAL_TRADERS_CIFAR10.pth](https://www.dropbox.com/scl/fi/h6176jjna5pw0sqouxxm7/TRAINED_FAAL_TRADERS_CIFAR10.pth?rlkey=w681sahq36gmhv8udg52bi81o&st=6mxqr1g6&dl=1)
+## Model Checkpoints for CIFAR100 
+[TRAINED_FAAL_AT_CIFAR100.pth](https://www.dropbox.com/scl/fi/jhl34p17h0p4h026m4m5h/TRAINED_FAAL_AT_CIFAR100.pth?rlkey=v86n50mvkm5423o9c1qal8r0v&st=tlf8f4q2&dl=1)
+
+[TRAINED_FAAL_TRADERS_CIFAR100.pth](https://www.dropbox.com/scl/fi/ziftxk6ad4fy0fr059r25/TRAINED_FAAL_TRADERS_CIFAR100.pth?rlkey=0t4biut1gyzctvjatp4gxddek&st=01dk5cvh&dl=1)
 
 
