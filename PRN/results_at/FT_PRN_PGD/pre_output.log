@@ -1,0 +1,29 @@
+[2023/08/18 23:20:52] - Namespace(alpha=2.0, batch_size=128, betas=(0.5, 0.9999), data_dir='./cifar-data', distance='kl', epochs=2, epsilon=8, fname='output', gpuid=0, loss='AT', lr_max=0.01, lr_min=0.0, lr_schedule='multistep', model='PRN', momentum=0.9, normalization='std', out_dir='PRN/results_at/FT_PRN_PGD', pre_trained='PGD', save_model=True, scale=1.0, seed=42, steps=10, weight_decay=0.0005)
+[2023/08/18 23:20:53] - Epoch 	 Seconds 	 LR 	 	 Train Loss 	 Train Acc 	 Val Acc 	 PGD Acc 	 CW Acc
+[2023/08/18 23:22:05] - 0 	 68.4 	 	 0.0100000 	 1.5033 	 0.5486 	 0.7805	 0.4590 	 0.2461
+[2023/08/18 23:23:21] - 1 	 68.7 	 	 0.0010000 	 1.3361 	 0.5785 	 0.8023	 0.4738 	 0.3555
+[2023/08/18 23:23:28] - Total train time: 2.2842 minutes
+[2023/08/18 23:23:28] - Best avg checkpoint at 1, 0.473828125
+[2023/08/18 23:23:28] - Best worst checkpoint at 1, 0.35546875
+[2023/08/18 23:23:28] - Best both checkpoint at 1, 0.829296886920929
+[2023/08/18 23:23:44] - Namespace(batch_size=250, data_dir='./cifar-data', epsilon=8, fname='output', gpuid=0, model='PRN', model_name='PRN_PGD_0.01_1.0_worst_best.pth', normalization='std', out_dir='PRN/results_at/FT_PRN_PGD', pre_trained='PGD')
+[2023/08/18 23:23:44] - Evaluating PRN/results_at/FT_PRN_PGD/PRN_PGD_0.01_1.0_worst_best.pth
+[2023/08/18 23:24:07] - Evaluating pgd boundary
+[2023/08/18 23:24:07] - [0.1935     0.34100002 0.3182     0.39700001 0.51170003 0.63699996]
+[2023/08/18 23:24:07] - tensor([0.5370, 0.6650, 0.3630, 0.4580, 0.4390, 0.3950, 0.4160, 0.4680, 0.5810,
+        0.5610])
+[2023/08/18 23:24:28] - Evaluating cw boundary
+[2023/08/18 23:24:29] - [0.1935     0.34100002 0.3431     0.47200003 0.53659999 0.66100001]
+[2023/08/18 23:24:29] - tensor([0.5190, 0.6640, 0.3390, 0.4030, 0.3640, 0.3880, 0.3890, 0.4530, 0.5660,
+        0.5490])
+[2023/08/18 23:24:29] - clean class acc
+[2023/08/18 23:24:29] - tensor([0.8250, 0.9060, 0.7030, 0.7990, 0.8360, 0.6590, 0.7980, 0.7700, 0.8940,
+        0.8750])
+[2023/08/18 23:24:29] - Clean Acc 	 wosrt acc 	 PGD20 Acc 	 worst Acc 	 CW Acc 	 worst Acc
+[2023/08/18 23:24:29] - 0.8065 	 0.6590 	 0.4883 	 0.3630 	 0.4634 	 0.3390
+[2023/08/18 23:24:29] - []
+Evaluating PRN/results_at/FT_PRN_PGD/PRN_PGD_0.01_0.5_worst_best.pth
+tensor([0.5240, 0.6780, 0.3110, 0.3180, 0.3390, 0.3690, 0.3760, 0.4680, 0.5920,
+        0.5760])
+tensor(0.4551)
+tensor(0.3110)

@@ -1,0 +1,31 @@
+[2023/08/11 03:42:20] - Namespace(alpha=2.0, batch_size=128, betas=(0.5, 0.9999), data_dir='./cifar-data', distance='kl', epochs=2, epsilon=8, fname='output', gpuid=0, loss='AT', lr_max=0.01, lr_min=0.0, lr_schedule='multistep', model='WRN', momentum=0.9, normalization='01', out_dir='WRN/results/FT_WRN_AWP', pre_trained='AWP', save_model=True, scale=0.5, seed=42, steps=10, weight_decay=0.0005)
+[2023/08/11 04:04:56] - Namespace(alpha=2.0, batch_size=128, betas=(0.5, 0.9999), data_dir='./cifar-data', distance='kl', epochs=2, epsilon=8, fname='output', gpuid=0, loss='AT', lr_max=0.01, lr_min=0.0, lr_schedule='multistep', model='WRN', momentum=0.9, normalization='01', out_dir='WRN/results/FT_WRN_AWP', pre_trained='AWP', save_model=True, scale=0.5, seed=42, steps=10, weight_decay=0.0005)
+[2023/08/11 04:04:58] - Epoch 	 Seconds 	 LR 	 	 Train Loss 	 Train Acc 	 Val Acc 	 PGD Acc 	 CW Acc
+[2023/08/11 04:15:08] - 0 	 582.1 	 	 0.0100000 	 1.0893 	 0.6834 	 0.8410	 0.4754 	 0.3359
+[2023/08/11 04:25:26] - 1 	 582.7 	 	 0.0010000 	 0.7722 	 0.7715 	 0.8684	 0.5270 	 0.3516
+[2023/08/11 04:25:33] - Total train time: 19.4130 minutes
+[2023/08/11 04:25:33] - Best avg checkpoint at 1, 0.526953125
+[2023/08/11 04:25:33] - Best worst checkpoint at 1, 0.3515625
+[2023/08/11 04:25:33] - Best both checkpoint at 1, 0.8785156011581421
+[2023/08/11 04:25:50] - Namespace(batch_size=250, data_dir='./cifar-data', epsilon=8, fname='output', gpuid=0, model='WRN', model_name='WRN_AWP_0.01_0.5_worst_best.pth', normalization='01', out_dir='WRN/results/FT_WRN_AWP', pre_trained='AWP')
+[2023/08/11 04:25:50] - Evaluating WRN/results/FT_WRN_AWP/WRN_AWP_0.01_0.5_worst_best.pth
+[2023/08/11 04:29:15] - Evaluating pgd boundary
+[2023/08/11 04:29:15] - [0.1298     0.23699999 0.3448     0.49700001 0.47460002 0.64999998]
+[2023/08/11 04:29:15] - tensor([0.6130, 0.7240, 0.4260, 0.3500, 0.3810, 0.4220, 0.5100, 0.5610, 0.6050,
+        0.6620])
+[2023/08/11 04:32:42] - Evaluating cw boundary
+[2023/08/11 04:32:42] - [0.1298     0.23699999 0.3532     0.51700002 0.48299998 0.65600002]
+[2023/08/11 04:32:42] - tensor([0.6060, 0.7240, 0.4230, 0.3440, 0.3610, 0.4240, 0.4870, 0.5490, 0.5970,
+        0.6550])
+[2023/08/11 04:32:42] - clean class acc
+[2023/08/11 04:32:42] - tensor([0.8860, 0.9400, 0.8130, 0.8190, 0.8780, 0.7630, 0.8950, 0.8570, 0.9280,
+        0.9230])
+[2023/08/11 04:32:42] - Clean Acc 	 wosrt acc 	 PGD20 Acc 	 worst Acc 	 CW Acc 	 worst Acc
+[2023/08/11 04:32:42] - 0.8702 	 0.7630 	 0.5254 	 0.3500 	 0.5170 	 0.3440
+[2023/08/11 04:32:42] - []
+Files already downloaded and verified
+Evaluating WRN/results/FT_WRN_AWP/WRN_AWP_0.01_0.5_worst_best.pth
+tensor([0.5970, 0.7150, 0.4090, 0.3060, 0.3260, 0.4030, 0.4670, 0.5370, 0.5830,
+        0.6440])
+tensor(0.4987)
+tensor(0.3060)

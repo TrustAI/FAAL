@@ -1,0 +1,29 @@
+[2023/08/11 09:54:59] - Namespace(alpha=2.0, batch_size=128, betas=(0.5, 0.9999), data_dir='./cifar-data', distance='kl', epochs=2, epsilon=8, fname='output', gpuid=0, loss='AT', lr_max=0.01, lr_min=0.0, lr_schedule='multistep', model='WRN', momentum=0.9, normalization='01', out_dir='WRN/results/FT_WRN_TRADES', pre_trained='TRADES', save_model=True, scale=0.5, seed=42, steps=10, weight_decay=0.0005)
+[2023/08/11 09:55:02] - Epoch 	 Seconds 	 LR 	 	 Train Loss 	 Train Acc 	 Val Acc 	 PGD Acc 	 CW Acc
+[2023/08/11 10:05:17] - 0 	 585.8 	 	 0.0100000 	 1.0446 	 0.6914 	 0.8504	 0.5453 	 0.3359
+[2023/08/11 10:15:40] - 1 	 585.4 	 	 0.0010000 	 0.9473 	 0.7127 	 0.8586	 0.5430 	 0.3867
+[2023/08/11 10:15:46] - Total train time: 19.5199 minutes
+[2023/08/11 10:15:46] - Best avg checkpoint at 0, 0.5453125
+[2023/08/11 10:15:46] - Best worst checkpoint at 1, 0.38671875
+[2023/08/11 10:15:46] - Best both checkpoint at 1, 0.9296875
+[2023/08/11 10:16:03] - Namespace(batch_size=250, data_dir='./cifar-data', epsilon=8, fname='output', gpuid=0, model='WRN', model_name='WRN_TRADES_0.01_0.5_worst_best.pth', normalization='01', out_dir='WRN/results/FT_WRN_TRADES', pre_trained='TRADES')
+[2023/08/11 10:16:03] - Evaluating WRN/results/FT_WRN_TRADES/WRN_TRADES_0.01_0.5_worst_best.pth
+[2023/08/11 10:19:29] - Evaluating pgd boundary
+[2023/08/11 10:19:29] - [0.1404     0.25       0.325      0.45299998 0.46540004 0.602     ]
+[2023/08/11 10:19:29] - tensor([0.5540, 0.7480, 0.4150, 0.3980, 0.4090, 0.4490, 0.5010, 0.5780, 0.6380,
+        0.6560])
+[2023/08/11 10:22:58] - Evaluating cw boundary
+[2023/08/11 10:22:58] - [0.1404     0.25       0.3324     0.47999999 0.47279996 0.61800003]
+[2023/08/11 10:22:58] - tensor([0.5550, 0.7450, 0.4040, 0.3830, 0.3820, 0.4440, 0.4770, 0.5770, 0.6440,
+        0.6610])
+[2023/08/11 10:22:58] - clean class acc
+[2023/08/11 10:22:58] - tensor([0.8650, 0.9400, 0.7860, 0.8240, 0.8620, 0.7500, 0.8810, 0.8510, 0.9310,
+        0.9060])
+[2023/08/11 10:22:58] - Clean Acc 	 wosrt acc 	 PGD20 Acc 	 worst Acc 	 CW Acc 	 worst Acc
+[2023/08/11 10:22:58] - 0.8596 	 0.7500 	 0.5346 	 0.3980 	 0.5272 	 0.3820
+[2023/08/11 10:22:58] - []
+Evaluating WRN/results/FT_WRN_TRADES/WRN_TRADES_0.01_0.5_worst_best.pth
+tensor([0.5410, 0.7350, 0.3910, 0.3530, 0.3560, 0.4320, 0.4530, 0.5640, 0.6200,
+        0.6460])
+tensor(0.5091)
+tensor(0.3530)
