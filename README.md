@@ -1,7 +1,6 @@
 # Towards Fairness-Aware Adversarial Learning (FAAL)
 
-Code for CVPR 2024 paper "Towards Fairness-Aware Adversarial Learning"
-
+Code for CVPR 2024 paper "[Towards Fairness-Aware Adversarial Learning](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Towards_Fairness-Aware_Adversarial_Learning_CVPR_2024_paper.pdf)".
 
 
 ## Requisite
